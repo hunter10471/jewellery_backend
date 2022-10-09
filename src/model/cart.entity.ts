@@ -1,6 +1,7 @@
-import { Column, OneToMany, Entity, BaseEntity, OneToOne } from 'typeorm';
+import { Column, OneToMany, Entity, OneToOne } from 'typeorm';
+import { BaseEntity } from './base.entity';
 import { Product } from './product.entity';
-import { User } from './user.entity';
+import { User } from '../api/user/user.entity';
 
 @Entity({ name: 'cart' })
 export class Cart extends BaseEntity {

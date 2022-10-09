@@ -1,7 +1,7 @@
 import { Column, Entity, ManyToOne } from 'typeorm';
 import { BaseEntity } from './base.entity';
 import { Product } from './product.entity';
-import { User } from './user.entity';
+import { User } from '../api/user/user.entity';
 
 @Entity({ name: 'rating' })
 export class Rating extends BaseEntity {
